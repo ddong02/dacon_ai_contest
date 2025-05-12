@@ -1,0 +1,13 @@
+1. PadSquare::apply 이 함수 실제로 쓰이는지?
+
+2. Daon 공유 코드에서 증식코드 부분, Dropout 사용 , 증식된 데이터 확인하는 코드 구현, schedule 부분
+
+3. batch size 32->64, 시간 안 줄음
+
+4. DataLoader 의 num_workers (와 CPU 코어 수의 관계)
+
+5. 윈도우에서 name == "main"
+
+6. 단유 선배 자료
+
+7. EDA

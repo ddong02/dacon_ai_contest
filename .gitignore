@@ -1,0 +1,8 @@
+baseline_submit.csv
+sample_submission.csv
+test.csv
+test/
+train/
+output/
+!best_model.pth
+dacon_ai_contest/

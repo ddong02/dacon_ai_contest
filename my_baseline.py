@@ -321,8 +321,8 @@ if __name__ == '__main__':
     val_dataset = CustomDataset(val_df['img_path'].values, val_df['rock_type'].values, test_transform)
     val_loader = DataLoader(val_dataset, batch_size=CFG['BATCH_SIZE'], shuffle=False, num_workers=4,pin_memory=True,prefetch_factor=2)
 
-    model = timm.create_model('legacy_xception', pretrained=True, num_classes=7)
-
+    # model = timm.create_model('legacy_xception', pretrained=True, num_classes=7)
+    model = timm.create_model('xception', pretrained=True, num_classes=7)
 
     optimizer = torch.optim.Adam(params = model.parameters(), lr = CFG["LEARNING_RATE"],weight_decay=1e-4)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=2, threshold_mode='abs', min_lr=1e-8)

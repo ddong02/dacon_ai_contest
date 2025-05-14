@@ -3,6 +3,7 @@ sample_submission.csv
 test.csv
 test/
 train/
-output/
-!best_model.pth
+output/*
+!output/
+!output/best_model.pth
 dacon_ai_contest/
